@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .sty01{
+            font-size:30px;
+        }
+
+        .sty02{
+            font-size:50px;
+            width:300px;
+            height:200px;
+            background:lightsalmon;
+        }
+    </style>
+
+    <script>
+        window.onload = function(){
+            var oDiv = document.getElementById('div1');
+            var  oA = document.getElementById('a1');
+           
+           // 获取属性值
+            var sId = oDiv.id;
+            alert(sId);
+
+            //写属性值，也叫做设置属性值
+            oDiv.style.color = 'red';
+            oDiv.style.fontSize = '30px';  //特例1
+            oA.className = 'sty02'    //特例2
+
+
+            //操作元素包裹的内容
+            //读取包裹的内容
+            var sTr = oDiv.innerHTML;
+            alert(sTr)
+
+            // 写元素包裹的内容
+            oDiv.innerHTML = '改变的文字';
+            oDiv.innerHTML = '<a href = "http://www.baidu.com">百度网</a>'
+
+        }   
+    </script>
+</head>
+<body>
+    <div id="div1">这是一个div</div>
+    <a href="#" class = "sty01" id="a1">这是一个链接</a>
+</body>
+</html>

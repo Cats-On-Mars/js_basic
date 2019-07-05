@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+            var oBtn = document.getElementById('btn');
+            var oDiv = document.getElementById('div01');
+            
+            /*function fnChange(){
+                oDiv.style.width="300px";
+                oDiv.style.height="300px";
+                oDiv.style.background="gold";
+            }
+            oBtn.onclick = fnChange;*/
+
+            //改成匿名函数形式
+            // 事件属性onclick
+            oBtn.onclick = function(){
+                oDiv.style.width="100px";
+                oDiv.style.height="30px";
+                oDiv.style.background="gold";
+            };
+            
+            // 事件属性onmouseover和onmouseout
+            oDiv.onmouseover = function(){
+                oDiv.style.width="100px";
+                oDiv.style.height="30px";
+                oDiv.style.background="gold";
+            };
+            oDiv.onmouseout = function(){
+                oDiv.style.background="white";
+            };
+        }    
+    </script>
+</head>
+<body>
+    <input type="button" value="改变样式" id="btn">
+    <div id="div01">这是一个div</div>
+
+
+</body>
+</html>

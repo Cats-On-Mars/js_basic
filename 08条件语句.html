@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var iNum01 = 12;
+        var iNum02 = 12;
+
+        if(iNum01==iNum02){
+            alert('相等！');
+        }else{
+            alert('不相等！');
+        }
+
+        var iNum3 = '12';
+        if(iNum3==12){    //隐式转换，默认会将符号两边变量转成同一种类型（number）
+            alert('相等！');
+        }else{
+            alert('不相等！');
+        }
+
+        var iNum4 = '12';
+        if(iNum4===12){    //===不会进行隐式转换
+            alert('相等！');
+        }else{
+            alert('不相等！');
+        }
+
+
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

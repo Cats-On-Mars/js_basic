@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    // 定义数组
+    var aList = new Array(1,2,3);
+    var aList2 = [1,2,3,'abc']; //一个数组中的数据类型可以不同
+
+    // 属性
+    alert(aList.length);  //数组长度
+    alert(aList[0]);  //获取第n个数组
+
+    // 方法
+    aList.join('-'); //1-2-3 将数组成员通过参数传入的符号合并成字符串 用''空字符串则就是简单地拼在一起
+    aList.push();//添加参数到数组末尾
+    aList.pop();//删除最后一个成员
+    aList.reverse();//将数组倒叙排列
+    aList.indexOf();//返回数组中元素第一次出现的索引值.***若没有这个成员则返回-1
+    aList.splice(a,b,c);//从索引为a的元素开始,删除b个元素,替换为c(可以是多个)
+    
+    //多维数组,即数组嵌套
+    var aList3 = [[1,2,3]['a','b','c']];
+    
+    //for循环
+    var len = aList2.length;
+    for(var i=0;i<len;i++){
+        alert(aList2[i]);
+    }
+
+
+    // 数组去重
+    var aList4 = [1,3,6,4,2,4,6,4,3,2,3,4,5,1,1,3,5];
+    var aList42 = [];
+    for(var i=0;i<aList4.length;i++){
+        if(aList4.indexOf(aList4[i])==i){
+            aList42.push(aList4[i]);
+        }
+    }
+
+
+
+
+
+
+    
+    </script> 
+</head>
+<body>
+  
+</body>
+</html>

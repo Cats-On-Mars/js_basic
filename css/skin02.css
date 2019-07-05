@@ -1,0 +1,12 @@
+body{
+    background:lightslategray;
+}
+
+input{
+    width:200px;
+    height:50px;
+    background:lightseagreen;
+    /* border-radius: 23px; */
+    border:0px;
+    outline: none;
+}

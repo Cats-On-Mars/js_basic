@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    // 定义变量
+    /*
+    var iNum = 12;
+    var sTr = 'qwe';
+    var bIsMove = true;
+    */
+    var iNum01 = 12,sTr = 'abc',bIsMove = true;
+    var iNum02;  //变量声明但是没有初始化，他的值和类型都是undefined
+    alert(iNum02)  //undefind
+
+
+    // 函数调用(可以在函数定义之前。预解析：预读一遍，函数定义提到最前面去)
+    fnAlert()
+    // 定义函数
+    function fnAlert(){
+        alert('hello function');
+    }
+   
+    alert(iNum03); //不会报错 udefined （预解析把声明提前，初始化不提前）
+    var iNum03 = 03;
+    alert(iNum03); //03 函数预解析好像没啥用
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

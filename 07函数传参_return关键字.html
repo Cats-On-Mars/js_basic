@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        span{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        input{
+            width:60px;
+            height:20px;
+            border:0px;
+            background: lightgreen;
+            border-radius: 5px;
+            font-size: 18px;
+            outline: none;
+        }
+    </style>
+    <script>
+        //定义可以传参的函数
+        // function fnAdd(iNum01,iNum02){
+        //     var iRs = iNum01 + iNum02;
+        //     // alert(iRs);
+        //     return iRs;
+        // }
+        //调用传参的函数
+        // 若函数没有返回值，得到的值是undefined
+        // var iRs2 = fnAdd(10,5);
+        // alert(iRs2);
+
+        window.onload = function(){
+            var oTxt1 = document.getElementById('num1');
+            var oTxt2 = document.getElementById('num2');
+            var oBtn = document.getElementById('btn');
+
+            var a = oTxt1.value;
+            var b = oTxt2.value;
+            oBtn.onclick = function(a,b){
+                var iRs = a + b;
+                alert(iRs);
+            }
+        }
+
+
+
+    </script>
+</head>
+<body>  
+    <div>
+        <input type="text" id="num1">
+        <span>+</span>
+        <input type="text" id="num2">
+        <input type="button" value="=" id="btn" style="width:30px">
+    </div>
+    
+
+  
+</body>
+</html>
